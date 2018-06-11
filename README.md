@@ -1,1 +1,14 @@
+- Program was written in React
+- The program can take a dynamic x and y coordinate to generate the graph (Up to 26 for the x coordinate)
+- Cell calculations were done with the library, hot-formula-parser. This library deals with excel syntax and outputs the correct result. It may not have been your intention to let me use this library. Please let me know if you want me to change it
+- Cell calculations can be done with ADD(A1,A2) or SUMPRODUCT(A1, A2). 
+- Calculations such as =A1 or =A1 + A2 * A3 can be done as well but are not suppose to be done. 
+- Nested calculations are not supported. A full list of commands can be found here: https://github.com/handsontable/formula.js
+- The program needs some work on the UI aspect, as there are no keyboard controls, and the cell selection and deselection requires more work
+- The getGraph function needs to be fixed to look cleaner
 
+- When the user changes a cell and clicks out of it, the program does the following:
+	- The program first sets the input (raw text the user types in) and evaluates an equation if one exists
+	- A directed graph with all edges is generated with the getDisplay function
+	- The nodes are topologically sorted to get the ordering in which nodes will be processed
+	- Each node is evaluated and the value is set
