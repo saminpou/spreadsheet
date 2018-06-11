@@ -1,0 +1,17 @@
+.cell {
+    width: 100px;
+    padding: 5px;
+    margin: 0;
+    height: 25px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    color: black;
+    border: 1px solid #cacaca;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 15px;
+    overflow: hidden;
+    background-color: white;
+}
